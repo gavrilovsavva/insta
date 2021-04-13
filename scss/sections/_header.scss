@@ -1,0 +1,28 @@
+.header {
+  &__container {
+    display: flex;
+  }
+  &__logo {
+  }
+  &__btn {
+  }
+}
+
+.burger {
+  &__line-top {
+  }
+  &__line-mid {
+  }
+  &__line-bot {
+  }
+}
+
+.nav {
+  display: none;
+  &__link {
+  }
+}
+
+.language {
+  display: none;
+}
