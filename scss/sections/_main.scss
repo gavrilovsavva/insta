@@ -1,0 +1,78 @@
+.main {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__shadow {
+    position: absolute;
+    z-index: -1;
+    filter: blur(50px);
+    top: -100px;
+  }
+  @media screen and (min-width: 1440px) {
+    &__container {
+      display: flex;
+      flex-direction: unset;
+      justify-content: space-between;
+    }
+    &__shadow {
+      top: -60%;
+      width: 800px;
+    }
+  }
+}
+
+.main-text {
+  max-width: 628px;
+  &__title {
+    font-family: "VisueltProMedium";
+    font-size: var(--h1-title);
+    margin-bottom: 40px;
+  }
+  &__form {
+    max-width: 465px;
+    height: 56px;
+    background-color: rgba($color: white, $alpha: 0.5);
+    box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+    border-radius: 16px;
+    display: flex;
+    padding: 8px;
+    margin-bottom: 20px;
+    &__mail {
+      background-color: transparent;
+      outline: none;
+      border: 0;
+      padding-left: 5px;
+      color: var(--grey);
+      width: 100%;
+    }
+    &__submit {
+      background-color: var(--white);
+      border: 0;
+      border-radius: 16px;
+      padding: 10px 24px;
+      color: var(--blue);
+      cursor: pointer;
+    }
+  }
+  &__confirm {
+    font-size: var(--description);
+    color: var(--grey);
+    max-width: 354px;
+    display: block;
+    &-blue {
+      color: var(--blue);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 100px;
+  }
+}
+
+.rocket {
+  max-width: 620px;
+  &__img {
+    width: 100%;
+  }
+}

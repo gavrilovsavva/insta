@@ -11,9 +11,9 @@
       <header class="header">
         <div class="container header__container">
           <div class="burger">
-            <span class="burger__line-top"></span>
-            <span class="burger__line-mid"></span>
-            <span class="burger__line-bot"></span>
+            <span class="burger__line-top burger__line"></span>
+            <span class="burger__line-mid burger__line"></span>
+            <span class="burger__line-bot burger__line"></span>
           </div>
           <a href="#" class="header__logo">Инстаботы</a>
           <nav class="nav">
@@ -24,13 +24,90 @@
             <a href="#" class="nav__link">Обратная связь</a>
           </nav>
           <div class="language">
-            <a href="#">Ru</a>
+            <a href="#" class="language__link">Ru</a>
             <span>/</span>
-            <a href="#">En</a>
+            <a href="#" class="language__link">En</a>
           </div>
-          <button class="btn header__btn">Вход и регистрация</button>
+          <button class="btn header__btn-desk">Вход и регистрация</button>
+          <button class="btn header__btn-mibile">
+            <img src="./img/user.svg" alt="user" />
+          </button>
         </div>
       </header>
+      <main>
+        <section class="main">
+          <img src="./img/shadow-main.svg" alt="shadow" class="main__shadow" />
+          <div class="container main__container">
+            <div class="main-text">
+              <h1 class="main-text__title">
+                Высокий уровень вовлечения представителей
+              </h1>
+              <form action="" class="main-text__form">
+                <input
+                  type="email"
+                  placeholder="Введите свой e-mail"
+                  class="main-text__form__mail"
+                  required
+                />
+                <input
+                  type="submit"
+                  value="Отправить"
+                  class="main-text__form__submit"
+                />
+              </form>
+              <span class="main-text__confirm">
+                Нажимая на кнопку вы соглашаетесь на обработку
+                <a href="#" class="main-text__confirm-blue"
+                  >персональных данных</a
+                ></span
+              >
+            </div>
+            <div class="rocket">
+              <img src="./img/rocket.svg" alt="rocket" class="rocket__img" />
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container about__container">
+            <h2 class="h2-title about__title"></h2>
+            <div class="about-cards">
+              <div class="about-cards__card">
+                <h3 class="about-cards__title">
+                  <span class="emoji">&#128516;</span> Легко и просто
+                </h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Malesuada gravida nisi sit felis odio. Sociis et pellentesque
+                  sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu
+                  turpis est, aliquet porttitor.
+                </p>
+              </div>
+              <div class="about-cards__card">
+                <h3 class="about-cards__title">
+                  <span class="emoji">&#128540;</span> Легко и просто
+                </h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Malesuada gravida nisi sit felis odio. Sociis et pellentesque
+                  sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu
+                  turpis est, aliquet porttitor.
+                </p>
+              </div>
+              <div class="about-cards__card">
+                <h3 class="about-cards__title">
+                  <span class="emoji">&#128526;</span> Легко и просто
+                </h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Malesuada gravida nisi sit felis odio. Sociis et pellentesque
+                  sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu
+                  turpis est, aliquet porttitor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="./js/script.js"></script>
   </body>
