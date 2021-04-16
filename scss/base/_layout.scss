@@ -38,6 +38,12 @@ a {
   font-size: var(--h2-title);
   font-family: "VisueltProMedium";
   color: var(--black);
+  @media screen and (min-width: 769px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1440px) {
+    text-align: unset;
+  }
 }
 .h3-title {
   font-size: var(--h3-title);
