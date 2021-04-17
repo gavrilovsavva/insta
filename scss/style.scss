@@ -1,12 +1,12 @@
 //base
-@import "~base/normalize";
-@import "~base/fonts";
-@import "~base/layout";
+@import "./scss/sections/base/normalize";
+@import "./scss/sections/base/fonts";
+@import "./scss/sections/base/layout";
 
 //sections
 
-@import "~sections/header";
-@import "~sections/main";
+@import "./scss/sections/sections/header";
+@import "./sections/main";
 @import "./sections/about";
 @import "./sections/works";
 @import "./sections/price";
