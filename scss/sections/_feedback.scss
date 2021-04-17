@@ -1,65 +1,58 @@
 .feedback {
+  background-color: var(--white);
   padding: 80px 0;
-  position: relative;
-  &__title {
-    margin-bottom: 40px;
-  }
-  &__shadow {
-    position: absolute;
-    z-index: -1;
-    filter: blur(80px);
-    top: 0;
-    right: -100px;
-  }
-  &__shadow-purple {
-    position: absolute;
-    z-index: -1;
-    filter: blur(80px);
-    bottom: 0;
+  @media screen and (min-width: 1440px) {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
   }
 }
 
-.feedback-cards {
-  &__card {
-    max-width: 650px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
-    border-radius: 16px;
-    padding: 15px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  &__name-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__user-img-container {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    margin-right: 15px;
-    overflow: hidden;
-    background-color: grey;
-    margin-bottom: 30px;
-    flex-shrink: 0;
-  }
-  &__name {
-    margin-right: auto;
+.feedback-form-block {
+  max-width: 465px;
+  &__title {
+    margin-bottom: 10px;
   }
   &__text {
     margin-bottom: 15px;
+    max-width: 465px;
   }
-  &__rate {
-    max-width: 136px;
+  &__input {
+    background: #f2f2f2;
+    border-radius: 16px;
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+  &__btn {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-right: 20px;
+      margin-bottom: unset;
+    }
   }
 }
 
-.feedback-user-pic {
-  width: 120%;
+.d-flex {
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.feedback-img-container {
+  max-width: 530px;
+  display: none;
+  &__img {
+    width: 100%;
+  }
+  @media screen and (min-width: 1440px) {
+    display: unset;
+  }
 }

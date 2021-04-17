@@ -1,8 +1,6 @@
 .price {
   padding: 80px 0;
   background-color: var(--white);
-  &__container {
-  }
   &__title {
     margin-bottom: 55px;
   }
@@ -45,8 +43,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    &__text {
     }
   }
   &__btn {

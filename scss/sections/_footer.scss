@@ -1,0 +1,26 @@
+.footer {
+  padding: 24px 56px;
+  background-color: var(--blue);
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text-block {
+    color: var(--white);
+  }
+  &__logo {
+    color: var(--white);
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__copy {
+    color: #d9d9d9;
+    display: block;
+  }
+  &__btn {
+    background-color: transparent;
+    color: var(--white);
+    border: 0;
+  }
+}
